@@ -73,4 +73,5 @@ func (self *FileDownloadData) UnmarshalJSON(data []byte) error {
 }
 
 const TRACKER_TCP_PORT int = 3141;
-const TRACKER_UDP_PORT int = 2718;
+const TRACKER_UDP_PORT int = 1618;
+const PEER_QUIC_PORT int = 2718;
