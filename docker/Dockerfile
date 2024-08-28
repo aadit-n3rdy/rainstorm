@@ -2,7 +2,9 @@ FROM golang:1.22-alpine
 
 WORKDIR /go/src/
 
-RUN go install github.com/aadit-n3rdy/rainstorm/peer@latest
-RUN go install github.com/aadit-n3rdy/raindstorm/tracker@latest
+# RUN apk update && apk add git
+
+RUN go install github.com/aadit-n3rdy/rainstorm/peer@main
+RUN go install github.com/aadit-n3rdy/rainstorm/tracker@main
 
 CMD [ "/bin/sh" ]
