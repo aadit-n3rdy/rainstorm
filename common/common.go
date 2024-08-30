@@ -9,6 +9,7 @@ type FileDownloadData struct {
 	FileID string `json:"file_id"`
 	FileName string `json:"file_name"`
 	Peers []Peer `json:"peers"`
+	ChunkCount int `json:"chunk_count"`
 };
 
 const TRACKER_TCP_PORT int = 3141;
